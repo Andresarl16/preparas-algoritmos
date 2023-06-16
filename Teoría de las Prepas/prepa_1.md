@@ -91,7 +91,7 @@ Hello world
 Las variables pueden almacenar diferentes tipos de datos, como por ejemplo:
 | Tipo | Clase | Ejemplo |
 | ----------- | ----------- | ------------------------------------------------- |
-| str | Cadena | "Hello", 'Hello' |
+| str | Cadena | "Hello" o 'Hello' |
 | int | Entero | 11 |
 | long | Entero | 11 |
 | float | Decimal | 11.5 |
@@ -99,7 +99,7 @@ Las variables pueden almacenar diferentes tipos de datos, como por ejemplo:
 | bool | Booleano | True, False |
 | list | Secuencia | ["1", "2", "3"] |
 | tuple | Secuencia | ("1", "2", "3") |
-| dict | Diccionario | {"nombre" : "Stefani", "apellido" : "Perez"} |
+| dict | Diccionario | {"nombre" : "Andrés", "apellido" : "Rojas"} |
 | set | Conjunto | {"1", "2", "3"} |
 
 Si deseamos conocer el tipo de dato de alguna variable podemos usar **type()**
@@ -119,6 +119,57 @@ print(type(numero_2))
 ```
 
 Pueden leer un poco mas sobre los tipos de datos en python en este link: https://eiposgrados.com/blog-python/tipos-de-datos-de-python/
+
+## Casting
+
+El Cast o Casting es la acción de convertir un tipo de dato a otro, existen dos tipos de conversiones:
+
+- Conversiones implícitas: Son realizadas automáticamente por python.
+
+**Código**
+
+```python
+a = 1   # <class 'int'>
+b = 2.3 # <class 'float'>
+
+a = a + b
+print(a)
+print(type(a))
+
+```
+
+**Output**
+
+```shell
+3.3
+<class 'float'>
+```
+
+- Conversiones explícitas: Son realizadas de forma manual por nosotros.
+
+```python
+a = 3.5
+print(type(a))
+a = str(a)
+print(type(a))
+```
+
+**Output**
+
+```shell
+<class 'float'>
+<class 'str'>
+```
+
+En la siguiente tabla se muestran algunos ejemplos de casteos
+
+| Casteo  | Tipo de Dato Resultante |
+| ------- | ----------------------- |
+| int()   | int                     |
+| float() | float                   |
+| str()   | string                  |
+| list()  | list                    |
+| set()   | set                     |
 
 ## Variables
 
