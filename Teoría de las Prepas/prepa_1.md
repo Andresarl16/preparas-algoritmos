@@ -1,4 +1,4 @@
-# Preparadurías Algoritmos y Programacion
+# Preparadurías Taller de Python
 
 **Preparador:** Andrés Rojas
 
