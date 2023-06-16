@@ -356,6 +356,59 @@ else:
   print("El numero es negativo")
 ```
 
+## Indentacion
+
+Son los espacios al comienzo de cada línea de nuestro código, de esta manera python reconoce los bloques de codigo. Una forma sencilla de reconocer en que situaciones debemos indentar nuestro código, es identificar las líneas que terminan con _:_.
+
+**Código**
+
+```python
+if True:
+	print("Hello world")
+```
+
+**Output**
+
+```shell
+Hello world
+```
+
+En el codigo anterior python entiende que si se cumple la condicion del _if_, entonces debe ejecutar el bloque de codigo que esta **adentro** de este _if_. Se debe usar la misma cantidad de espacios en el mismo bloque de código, de lo contrario tu codigo puede fallar.
+
+**Código**
+
+```python
+if True:
+print("Hello world")
+```
+
+**Output**
+
+```shell
+File "main.py", line 2
+    print("Hello world")
+    ^
+IndentationError: expected an indented block
+```
+
+**Código**
+
+```python
+if True:
+    print("Hello")
+        print("world")
+```
+
+**Output**
+
+```shell
+File "main.py", line 3
+    print("world")
+IndentationError: unexpected indent
+```
+
+En estos dos últimos bloques de código se generan errores por la falta de indentación como es en el primer caso, o por la inconsistencia de la misma como en el segundo.
+
 ### Ejercicio 5
 
 Escribir un programa que le pida al usuario dos números y la operación que desea realizar, para esto se le debe mostrar un menú con los números equivalentes a cada una de las opciones.
